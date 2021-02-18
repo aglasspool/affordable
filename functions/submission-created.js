@@ -1,7 +1,7 @@
 exports.handler = async function(event, context) {
     return {
         statusCode: 200,
-        const { payload } = JSON.parse(event.body),
-        console.log(payload)
+        const email = JSON.parse(event.email),
+        console.log(email)
     };
 }
